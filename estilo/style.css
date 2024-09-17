@@ -1,0 +1,560 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor01: #11c770;
+    --cor02: #213222;
+    --cor03: #adadad;
+    --cor04: #d2d3c5;
+    --cor05: #ecede7;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-color: var(--cor01);
+    display: flex; /* Organiza elementos na horizontal */
+    justify-content: space-between; /* Espaça a logo e a navegação */
+    align-items: center; /* Alinha verticalmente */
+    padding: 15px 160px; /* Ajusta o padding geral */
+}
+
+header > img {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha os links no centro verticalmente */
+    margin-left: 160px; /* Distância da logo até o primeiro link */
+    gap: 80px; /* Espaçamento entre os links */
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+a::after {
+    content: '\25BE';
+    margin-left: 10px;
+}
+
+header a.botao01::after {
+    content: ''; /* Remove o conteúdo do ::after */
+    margin-left: 0; /* Remove a margem, se houver */
+}
+
+header a.botao01 {
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px;
+    border-color: white;
+    border-style: ridge;
+    border-radius: 4px;
+    margin-left: 160px;
+}
+
+section.parte01 {
+    background-image: url('../imagens/img-background-01.jpg');
+    background-position: 100vw;
+    padding-bottom: 180px;
+}
+
+section.parte01 > h1 {
+    color: var(--cor02);
+    font-size: 3.6em;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 180px 0px 20px 160px;
+}
+
+section.parte01 > p {
+    color: var(--cor02);
+    font-size: 1.1em;
+    margin: 0px 0px 40px 160px;
+}
+
+section a {
+    color: var(--cor02);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+section a.botao02 {
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px;
+    border-color: var(--cor02);
+    border-style: ridge;
+    border-radius: 4px;
+    margin-left: 160px;
+    margin-bottom: 180px;
+}
+
+main a.botao02::after {
+    content: ''; /* Remove o conteúdo do ::after */
+    margin-left: 0; /* Remove a margem, se houver */
+}
+
+section.parte02 {
+    display: flex;
+    justify-content: space-between;
+    margin:40px 160px;
+}
+
+.parte02 h3 {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--cor02);
+}
+
+.parte02 p {
+    font-size: 0.95em;
+    font-weight: 500;
+    color: var(--cor03);
+}
+
+.boleto {
+    display: flex;
+    align-items: center;
+}
+
+.boleto > img {
+    margin-right: 20px;
+    height: 50%;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+}
+
+.check > img {
+    margin-right: 20px;
+    height: 50%;
+}
+
+.cartao {
+    display: flex;
+    align-items: center;
+}
+
+.cartao > img {
+    margin-right: 20px;
+    height: 50%;
+}
+
+.cashback {
+    display: flex;
+    align-items: center;
+}
+
+.cashback > img {
+    margin-right: 20px;
+    height: 50%;
+}
+
+.parte03 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parte03 h2 {
+    color: var(--cor02);
+    font-weight: 600;
+    font-size: 1.8em;
+    line-height: 36px;
+    margin-bottom: 20px;
+    margin-left: 160px;
+}
+
+.parte03 p {
+    color: var(--cor03);
+    font-weight: 500;
+    margin-bottom: 40px;
+    margin-left: 160px;
+}
+
+a.botao03 {
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px;
+    border-color: var(--cor02);
+    border-style: ridge;
+    border-radius: 4px;
+    margin-left: 160px;
+}
+
+a.botao03::after {
+    content: ''; /* Remove o conteúdo do ::after */
+    margin-left: 0px; /* Remove a margem, se houver */
+}
+
+.parte03 img {
+    margin-right: 160px;
+}
+
+.parte04 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parte04 h2 {
+    color: var(--cor02);
+    font-weight: 600;
+    font-size: 1.8em;
+    line-height: 36px;
+    margin-bottom: 20px;
+    margin-right: 265px;
+}
+
+.parte04 p {
+    color: var(--cor03);
+    font-weight: 500;
+    margin-bottom: 40px;
+    margin-right: 265px;
+}
+
+a.botao04 {
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px;
+    border-color: var(--cor02);
+    border-style: ridge;
+    border-radius: 4px;
+    margin-right: 265px;
+}
+
+a.botao04::after {
+    content: ''; /* Remove o conteúdo do ::after */
+    margin-left: 0px; /* Remove a margem, se houver */
+}
+
+.parte04 img {
+    width: 40vw;
+    margin: 16px 0px 0px 200px;
+}
+
+.parte05 {
+    background-image: url('../imagens/img-background-02.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 47.5vw;
+}
+
+.parte05 h2 {
+    color: var(--cor02);
+    font-weight: 600;
+    font-size: 1.8em;
+    line-height: 36px;
+    padding-top: 380px;
+    margin-left: 1060px;
+    margin-bottom: 20px;
+}
+
+.parte05 p {
+    color: var(--cor03);
+    font-weight: 500;
+    margin-left: 1060px;
+    margin-bottom: 40px;
+}
+
+a.botao05 {
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px;
+    border-color: var(--cor02);
+    border-style: ridge;
+    border-radius: 4px;
+    margin-left: 1060px;
+}
+
+a.botao05::after {
+    content: ''; /* Remove o conteúdo do ::after */
+    margin-left: 0px; /* Remove a margem, se houver */
+}
+
+.sub-parte06 {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}
+
+.parte06 h2 {
+    color: var(--cor02);
+    font-weight: 600;
+    font-size: 1.8em;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.parte06 > p {
+    text-align: center;
+    font-weight: 500;
+    color: var(--cor03);
+    margin-bottom: 80px;
+}
+
+.bloco01 {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 650px;
+    border: 2px solid;
+    border-color: var(--cor04);
+    border-radius: 5px;
+    margin: 0px 10px 60px auto;
+}
+
+.bloco01 > img {
+    margin-right: 60px;
+    height: 50%;
+}
+
+.bloco01 h3 {
+    color: var(--cor02);
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 1.1em;
+}
+
+.bloco01 p {
+    color: var(--cor03);
+    font-weight: 500;
+    font-size: 0.8em;
+    margin-bottom: 30px;
+}
+
+a.botao06 {
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px;
+    border-color: var(--cor02);
+    border-style: ridge;
+    border-radius: 4px;
+    margin-right: 265px;
+}
+
+a.botao06::after {
+    content: ''; /* Remove o conteúdo do ::after */
+    margin-left: 0px; /* Remove a margem, se houver */
+}
+
+.bloco02 {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 650px;
+    border: 2px solid;
+    border-color: var(--cor05);
+    border-radius: 5px;
+    margin: 0px auto 60px 10px;
+}
+
+.bloco02 > img {
+    margin-right: 60px;
+    height: 50%;
+}
+
+.bloco02 h3 {
+    color: var(--cor02);
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 1.1em;
+}
+
+.bloco02 p {
+    color: var(--cor03);
+    font-weight: 500;
+    font-size: 0.8em;
+    margin-bottom: 30px;
+}
+
+a.botao07 {
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px;
+    border-color: var(--cor02);
+    border-style: ridge;
+    border-radius: 4px;
+    margin-right: 265px;
+}
+
+a.botao07::after {
+    content: ''; /* Remove o conteúdo do ::after */
+    margin-left: 0px; /* Remove a margem, se houver */
+}
+
+.parte07 {
+    background-image: url('../imagens/img-parte05.jpg');
+    background-size: 83% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 60px;
+}
+
+.parte07 h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.8em;
+    line-height: 46px;
+    margin-left: 285px;
+    margin-bottom: 20px;
+    padding-top: 120px;
+}
+
+.parte07 p {
+    color: var(--cor03);
+    margin-left: 285px;
+    margin-bottom: 40px;
+}
+
+a.botao08 {
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px;
+    border-color: white;
+    border-style: ridge;
+    border-radius: 4px;
+    margin-bottom: 100px;
+    margin-left: 285px;
+}
+
+a.botao08::after {
+    content: ''; /* Remove o conteúdo do ::after */
+    margin-left: 0px; /* Remove a margem, se houver */
+}
+
+a.botao09 {
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px;
+    border-color: white;
+    border-style: ridge;
+    border-radius: 4px;
+    margin-bottom: 120px;
+    margin-left: 10px;
+}
+
+a.botao09::after {
+    content: ''; /* Remove o conteúdo do ::after */
+    margin-left: 0px; /* Remove a margem, se houver */
+}
+
+footer {
+    background-color: var(--cor02);
+    margin-top: 120px;
+}
+
+footer a::after {
+    content: ''; /* Remove o conteúdo do ::after */
+    margin-left: 0; /* Remove a margem, se houver */
+}
+
+footer img {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 40px 0px 40px 165px;
+}
+
+.footer-parte01 {
+    display: flex;
+    align-items: center;
+}
+
+.footer-parte01 > p {
+    color: white;
+    font-weight: 300;
+    font-size: 0.8em;
+    line-height: 15px;
+    margin-right: 915px;
+    margin-left: 40px;
+}
+
+.redes-sociais > img {
+    width: 25px;
+    height: auto;
+    margin: 0 20px;
+}
+
+.ultimos-links01 a {
+    display: block;
+    color: white;
+}
+
+.ultimos-links02 a {
+    display: block;
+    color: white;
+}
+
+.ultimos-links03 a {
+    display: block;
+    color: white;
+}
+
+.ultimos-links04 a {
+    display: block;
+    color: white;
+}
+
+.last-section {
+    display: flex;
+    justify-content: space-between; /* Adiciona espaço entre as colunas */
+}
+
+.last-section p {
+    color: var(--cor01);
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.last-section a {
+    display: block;
+    margin-bottom: 10px; /* Espaçamento entre os links */
+}
+
+.column:first-child {
+    margin-left: 160px; /* Margem à esquerda da primeira coluna */
+}
+
+.column:last-child {
+    margin-right: 160px; /* Margem à direita da última coluna */
+}
+
+.column {
+    margin-bottom: 80px;
+}
+
+.direitos p {
+    background-color: var(--cor01);
+    color: var(--cor02);
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
